@@ -1,0 +1,66 @@
+{
+    "info": {
+        "_postman_id": "linkedin-insights-collection",
+        "name": "LinkedIn Insights API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Get Page Insights",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{base_url}}/api/v1/insight/deepsolv",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "v1",
+                        "insight",
+                        "deepsolv"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Search Pages",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{base_url}}/api/v1/insights/search?industry=Technology&min_followers=1000",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "v1",
+                        "insights",
+                        "search"
+                    ],
+                    "query": [
+                        {
+                            "key": "industry",
+                            "value": "Technology"
+                        },
+                        {
+                            "key": "min_followers",
+                            "value": "1000"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        }
+    ],
+    "variable": [
+        {
+            "key": "base_url",
+            "value": "http://localhost:8000",
+            "type": "string"
+        }
+    ]
+}
