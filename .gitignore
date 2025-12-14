@@ -5,5 +5,5 @@ __pycache__/
 .DS_Store
 mongo_data/
 test_output*.txt
-tunnel.log
+*.log
 cloudflared.exe
