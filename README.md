@@ -16,13 +16,13 @@ A FastAPI-based microservice to scrape, store, and analyzing LinkedIn Page insig
 **[Click Here to Open Premium Dashboard](https://trek-author-succeed-idol.trycloudflare.com)**
 *(Powered by Cloudflare Tunnel)*
 
-### Web Dashboard (Local)
-1.  Open [http://localhost:8000/](http://localhost:8000/) in your browser.
+### Web Dashboard
+1.  Open [https://trek-author-succeed-idol.trycloudflare.com/](https://trek-author-succeed-idol.trycloudflare.com/) in your browser.
 2.  Enter a Company Name (e.g., `openai`) or LinkedIn URL.
 3.  Click **Analyze** to see real-time data.
 
 ### API Documentation
-Visit [http://localhost:8000/docs](http://localhost:8000/docs) for the Swagger UI.
+Visit [https://trek-author-succeed-idol.trycloudflare.com/docs](https://trek-author-succeed-idol.trycloudflare.com/docs) for the Swagger UI.
 
 ## Setup & Run
 
