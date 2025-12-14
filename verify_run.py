@@ -28,6 +28,11 @@ def run_verification():
         
         if response.status_code == 200:
             print("SUCCESS: verification passed!")
+            # Open output in browser as requested
+            import webbrowser
+            print("Opening output in browser...")
+            webbrowser.open("http://localhost:8000/api/v1/insight/verify-company")
+            webbrowser.open("http://localhost:8000/docs")
         else:
             print("FAILURE: Validation failed.")
             print(proc.stderr.read().decode())
