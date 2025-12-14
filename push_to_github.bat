@@ -6,7 +6,7 @@ echo Initializing Git repository...
 %GIT_CMD% config user.email "bot@example.com"
 %GIT_CMD% config user.name "AI Assistant"
 %GIT_CMD% add .
-%GIT_CMD% commit -m "Final Submission: Complete Project with Deployment Configs"
+%GIT_CMD% commit -m "Enhance Codebase: Add Architectural Decisions & Telemetry"
 %GIT_CMD% branch -M main
 %GIT_CMD% remote remove origin
 %GIT_CMD% remote add origin https://github.com/AK-2110/Initial-release-of-LinkedIn-Insights-Microservice.git

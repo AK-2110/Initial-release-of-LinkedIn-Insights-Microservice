@@ -28,23 +28,32 @@ def run_verification():
         
         if response.status_code == 200:
             print("SUCCESS: verification passed!")
-            # Open output in browser as requested
-            import webbrowser
-            print("Opening output in browser...")
-            webbrowser.open("http://localhost:8000/api/v1/insight/verify-company")
-            webbrowser.open("http://localhost:8000/docs")
+            print("-" * 20)
+            print("SERVER LOGS (Showing Telemetry):")
+            # We need to terminate first to flush buffers or read non-blocking
+            proc.terminate()
+            stdout, stderr = proc.communicate()
+            if stderr:
+                print(stderr.decode())
+            if stdout:
+                print(stdout.decode())
+            print("-" * 20)
+            # import webbrowser
+            # print("Opening output in browser...")
+            # webbrowser.open("http://localhost:8000/api/v1/insight/verify-company")
+            # webbrowser.open("http://localhost:8000/docs")
         else:
             print("FAILURE: Validation failed.")
             print(proc.stderr.read().decode())
-            
     except Exception as e:
         print(f"Error during verification: {e}")
         # Print server output
-        logs = proc.stderr.read().decode()
-        print(f"Server Logs:\n{logs}")
+        # logs = proc.stderr.read().decode()
+        # print(f"Server Logs:\n{logs}")
     finally:
         print("Stopping server...")
-        proc.terminate()
+        if proc.poll() is None:
+            proc.terminate()
         proc.wait()
 
 if __name__ == "__main__":

@@ -1,0 +1,19 @@
+Starting server...
+Waiting for server to be ready...
+Making request to /api/v1/insight/verify-company
+Status: 200
+Response: {'_id': '693e76a9abc2560fc24247a2', 'page_id': 'verify-company', 'linkedin_internal_id': '2625864', 'name': 'Verify Company', 'url': 'https://www.linkedin.com/company/verify-company/', 'profile_pic_url': 'https://via.placeholder.com/150', 'description': 'This is the official LinkedIn page for Verify Company. We are innovating in the tech space.', 'website': 'https://www.google.com/search?q=verify-company', 'industry': 'Information Technology', 'followers_count': 5675, 'head_count': 239, 'specialties': ['AI', 'Machine Learning', 'Software Development'], 'ai_summary': 'AI Summary for Verify Company: This company operates in the Information Technology sector and has a strong following of 5675. Note: This is a generated summary (Mock Mode).', 'posts': [{'id': 'urn:li:share:366697', 'content': 'Exciting update from Verify Company! We are hiring for new roles. #tech', 'likes_count': 38, 'comments_count': 13, 'published_at': '2025-12-14T08:34:49.722656', 'comments': [{'user_name': 'John Doe', 'text': 'Great news!', 'published_at': None}, {'user_name': 'Jane Smith', 'text': 'Applied!', 'published_at': None}]}, {'id': 'urn:li:share:627790', 'content': 'Exciting update from Verify Company! We are hiring for new roles. #tech', 'likes_count': 430, 'comments_count': 19, 'published_at': '2025-12-14T08:34:49.724204', 'comments': [{'user_name': 'John Doe', 'text': 'Great news!', 'published_at': None}, {'user_name': 'Jane Smith', 'text': 'Applied!', 'published_at': None}]}, {'id': 'urn:li:share:616868', 'content': 'Exciting update from Verify Company! We are hiring for new roles. #tech', 'likes_count': 126, 'comments_count': 2, 'published_at': '2025-12-14T08:34:49.724204', 'comments': [{'user_name': 'John Doe', 'text': 'Great news!', 'published_at': None}, {'user_name': 'Jane Smith', 'text': 'Applied!', 'published_at': None}]}, {'id': 'urn:li:share:404683', 'content': 'Exciting update from Verify Company! We are hiring for new roles. #tech', 'likes_count': 365, 'comments_count': 14, 'published_at': '2025-12-14T08:34:49.724204', 'comments': [{'user_name': 'John Doe', 'text': 'Great news!', 'published_at': None}, {'user_name': 'Jane Smith', 'text': 'Applied!', 'published_at': None}]}, {'id': 'urn:li:share:577115', 'content': 'Exciting update from Verify Company! We are hiring for new roles. #tech', 'likes_count': 429, 'comments_count': 1, 'published_at': '2025-12-14T08:34:49.724204', 'comments': [{'user_name': 'John Doe', 'text': 'Great news!', 'published_at': None}, {'user_name': 'Jane Smith', 'text': 'Applied!', 'published_at': None}]}], 'employees': [{'name': 'Alice CEO', 'profile_url': None, 'designation': 'CEO'}, {'name': 'Bob Dev', 'profile_url': None, 'designation': 'Senior Developer'}], 'last_scraped_at': '2025-12-14T08:34:49.724204'}
+SUCCESS: verification passed!
+--------------------
+SERVER LOGS (Showing Telemetry):
+INFO:     Started server process [22824]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+
+Using In-Memory MongoDB (Mock) for Demo
+[METRICS] Scraped verify-company in 2.0275s
+INFO:     127.0.0.1:60787 - "GET /api/v1/insight/verify-company HTTP/1.1" 200 OK
+
+--------------------
+Stopping server...

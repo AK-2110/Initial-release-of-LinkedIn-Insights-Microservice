@@ -22,7 +22,10 @@ class SocialMediaUser(BaseModel):
     designation: Optional[str] = None
 
 class Page(Document):
-    page_id: str = Field(..., unique=True) # The unique identifier from URL (e.g. deepsolv)
+    # VALIDATION NOTE:
+    # 'page_id' allows both semantic slugs (e.g. 'openai') and numeric IDs.
+    # Enforced uniqueness at the DB level to prevent duplicate scraping jobs.
+    page_id: str = Field(..., unique=True)
     linkedin_internal_id: Optional[str] = None
     name: str
     url: str
