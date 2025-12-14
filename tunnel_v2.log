@@ -20,3 +20,12 @@
 2025-12-14T09:29:08Z INF ICMP proxy will use 2409:4091:8023:f204:d116:1f72:e193:ef4 in zone Wi-Fi as source for IPv6
 2025-12-14T09:29:08Z INF Starting metrics server on 127.0.0.1:20241/metrics
 2025-12-14T09:29:09Z INF Registered tunnel connection connIndex=0 connection=fa7a65b7-6822-45a0-a0d7-bbf3396a2738 event=0 ip=198.41.200.63 location=bom12 protocol=quic
+2025-12-14T09:40:05Z INF Initiating graceful shutdown due to signal terminated ...
+2025-12-14T09:40:05Z ERR failed to run the datagram handler error="Application error 0x0 (remote)" connIndex=0 event=0 ip=198.41.200.63
+2025-12-14T09:40:05Z ERR failed to serve tunnel connection error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.200.63
+2025-12-14T09:40:05Z ERR Serve tunnel error error="accept stream listener encountered a failure while serving" connIndex=0 event=0 ip=198.41.200.63
+2025-12-14T09:40:05Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.200.63
+2025-12-14T09:40:05Z ERR Connection terminated connIndex=0
+2025-12-14T09:40:05Z ERR no more connections active and exiting
+2025-12-14T09:40:05Z INF Tunnel server stopped
+2025-12-14T09:40:05Z INF Metrics server stopped
