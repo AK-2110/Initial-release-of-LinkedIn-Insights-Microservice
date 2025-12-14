@@ -13,16 +13,16 @@ A FastAPI-based microservice to scrape, store, and analyzing LinkedIn Page insig
 ## 🖥️ Usage
 
 ### 🌐 Online Demo (Live)
-**[Click Here to Open Premium Dashboard](https://craft-sailing-winston-col.trycloudflare.com)**
+**[Click Here to Open Premium Dashboard](https://blackberry-nice-trend-quarters.trycloudflare.com)**
 *(Powered by Cloudflare Tunnel)*
 
 ### Web Dashboard
-1.  Open [https://craft-sailing-winston-col.trycloudflare.com/](https://craft-sailing-winston-col.trycloudflare.com/) in your browser.
+1.  Open [https://blackberry-nice-trend-quarters.trycloudflare.com/](https://blackberry-nice-trend-quarters.trycloudflare.com/) in your browser.
 2.  Enter a Company Name (e.g., `openai`) or LinkedIn URL.
 3.  Click **Analyze** to see real-time data.
 
 ### API Documentation
-Visit [https://craft-sailing-winston-col.trycloudflare.com/docs](https://craft-sailing-winston-col.trycloudflare.com/docs) for the Swagger UI.
+Visit [https://blackberry-nice-trend-quarters.trycloudflare.com/docs](https://blackberry-nice-trend-quarters.trycloudflare.com/docs) for the Swagger UI.
 
 ## Setup & Run
 
